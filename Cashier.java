@@ -32,12 +32,11 @@ public class Cashier {
 			changeValue =  computeEnvValue(oneEnv) - (dollars + ((double)cents / 100)); //cents must be received as xx
 			if(changeValue < 0) {
 				badCents = (int)Math.abs(Math.round(changeValue * 100));
-				throw new NegativeBalanceException("price exceeds Envelope contents by " + badCents + " cents.");
+				throw new NegativeBalanceException(negativeBalance);
 			}
 
-		} catch (NegativeBalanceException e) {
-			// TODO Auto-generated catch block
-			// another swallow.
+		} catch (NegativeBalanceException negativeBalance) {
+			System.out.println(negativeBalance);
 		} 
 		
 		// load up change Envelope
