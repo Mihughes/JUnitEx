@@ -24,7 +24,9 @@ public class Envelope {
 	}
 
 	public double getTotalCents() {
-		return 0;
+		double totalCents = 0.0;
+		totalCents = (dollars * 100) + (quarters * 25) + (dimes* 10) + (nickels * 5) + pennies;
+		return totalCents;
 	}
 
 	public int getDollars() {
