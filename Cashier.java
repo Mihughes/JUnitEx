@@ -1,3 +1,20 @@
+/*
+ * git@github.com:Mihughes/JUnitEx.git
+  104  cd workspace
+  105  cd JUnit_Ex
+  106  ls
+  107  cd src
+  108  ls
+  109  cd jU
+  110  ls
+  111  git init
+  112  git add *.java
+  113  git commit -m "initial java code"
+  114  git remote add ju git@github.com:Mihughes/JUnitEx.git
+  115  git pull ju master
+  116  git push ju master
+ */
+
 package jU;
 
 public class Cashier {
