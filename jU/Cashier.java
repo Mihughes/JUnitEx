@@ -18,6 +18,7 @@
 
 package jU;
 
+
 public class Cashier {
 	
 	public Envelope makeChange(Envelope oneEnv, int dollars, int cents) {
@@ -32,7 +33,7 @@ public class Cashier {
 			changeValue =  computeEnvValue(oneEnv) - (dollars + ((double)cents / 100)); //cents must be received as xx
 			if(changeValue < 0) {
 				badCents = (int)Math.abs(Math.round(changeValue * 100));
-				throw new NegativeBalanceException(negativeBalance);
+				throw new NegativeBalanceException(badCents);
 			}
 
 		} catch (NegativeBalanceException negativeBalance) {
