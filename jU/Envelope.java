@@ -7,14 +7,14 @@ public class Envelope {
 	private int nickels = 0;
 	private int pennies = 0;
 	
-	Envelope() { //default contractor
+	public Envelope() { //default contractor
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
 	
 	
-	Envelope(int dollars, int quarters, int dimes, int nickels, int pennies) { //constructor
+	public Envelope(int dollars, int quarters, int dimes, int nickels, int pennies) { //constructor
 		super();
 		this.dollars = dollars;
 		this.quarters = quarters;
