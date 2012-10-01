@@ -17,6 +17,7 @@ public class TestEnvelope {
 	@Test
 	public void testGetTotalCents() {
 		
+
 		Envelope envelope = new Envelope();
 		envelope.setDollars(5);
 		Cashier cashier = new Cashier();
