@@ -35,7 +35,7 @@ public class TestEnvelope {
 //		actual = envelope.getTotalCents();
 //		Assert.assertEquals(expected, actual);	
 		
-		
+// activate the cashier line for the rest of the tests. But, that is beyond the focus.		
 		// expectation: JUnit pass with "Insufficient Funds, you need 100 more cents" message.
 //		expected = -100;  
 //		envelope = cashier.makeChange(envelope, 6, 0);
