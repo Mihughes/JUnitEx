@@ -20,16 +20,27 @@ public class TestEnvelope {
 
 		Envelope envelope = new Envelope();
 		envelope.setDollars(5);
-		Cashier cashier = new Cashier();
+		//Cashier cashier = new Cashier(); // this line is not needed for the first tests.
 		double expected = 0.0;
 		double actual = 0.0;
 		
 		//just activate 1 of the test sections. 
-		// expectation: JUnit pass with "Insufficient Funds, you need 100 more cents" message.
-		expected = -100;  
-		envelope = cashier.makeChange(envelope, 6, 0);
+		//expectation: Pass
+		expected = 500;
 		actual = envelope.getTotalCents();
-		Assert.assertEquals(expected, actual);	
+		Assert.assertEquals(expected, actual);			
+		
+		//expectation: Fail,
+//		expected = 400;
+//		actual = envelope.getTotalCents();
+//		Assert.assertEquals(expected, actual);	
+		
+// activate the cashier line for the rest of the tests. But, that is beyond the focus.		
+		// expectation: JUnit pass with "Insufficient Funds, you need 100 more cents" message.
+//		expected = -100;  
+//		envelope = cashier.makeChange(envelope, 6, 0);
+//		actual = envelope.getTotalCents();
+//		Assert.assertEquals(expected, actual);	
 		
 		// expectation: pass
 //		expected = 68.0;
